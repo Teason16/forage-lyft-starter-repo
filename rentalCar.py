@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class rentalCar(ABC):
+class rentalCar():
     def __init__(self, current_date, current_mileage, engine, battery, last_service_date, last_service_mileage):
         self.current_date = current_date
         self.current_mileage = current_mileage        
