@@ -1,3 +1,4 @@
+from datetime import datetime
 from battery.nubbin_battery import NubbinBattery
 from battery.spindler_battery import SpindlerBattery
 from rentalCar import RentalCar
@@ -6,7 +7,7 @@ from engine.sternman_engine import SternmanEngine
 from engine.willoughby_engine import WilloughbyEngine
 
 
-class CarFactory:
+class CarModel:
     @staticmethod
     def create_calliope(current_date, last_service_date, current_mileage, last_service_mileage):
         engine = CapuletEngine(current_mileage, last_service_mileage)
