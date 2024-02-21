@@ -1,9 +1,7 @@
 from abc import ABC
 
 
-class Engine(ABC):
-    
-    @abstractmethod
+class Battery(ABC):
     def needs_service(self):
         pass
 
